@@ -492,6 +492,11 @@ a.footer-value:hover {
   text-align: center;
 }
 
+header {
+  position: sticky !important;
+  top: 10px;
+}
+
 .category-row span {
   display: grid;
   gap: 5px;
