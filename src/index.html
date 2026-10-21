@@ -6,53 +6,59 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>IT WEBSITE — разработка цифровых продуктов</title>
+    <title>THOUSAND — Mobile apps and web services</title>
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
 
 <body>
     <header class="site-header">
-        <a class="site-logo" href="/" aria-label="IT Website — главная">IT WEBSITE</a>
+        <a class="site-logo" href="/" aria-label="THOUSAND — home">THOUSAND</a>
         <nav class="main-navigation" aria-label="Основная навигация">
             <ul>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#projects">Кейсы</a></li>
-                <li><a href="#team">Команда</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#projects">Media</a></li>
+                <li><a href="#projects">Cases</a></li>
                 <li><a href="#faq">FAQ</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#contacts">Contacts</a></li>
             </ul>
         </nav>
-        <p class="header-contact">Обсудим ваш проект?</p>
-        <a class="header-phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+        <div class="header-contacts">
+            <a class="header-phone" href="tel:+77072548147">+7 (707) 254 81 47</a>
+            <a class="header-phone header-phone-secondary" href="tel:+77783959026">+7 (778) 395 90 26</a>
+            <a class="header-email" href="mailto:thousanditcompany@gmail.com">thousanditcompany@gmail.com</a>
+        </div>
     </header>
-
-    <hr>
 
     <main>
         <section class="hero-section" aria-labelledby="hero-title">
-            <div class="hero-copy">
-                <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
-                <p>Создаём удобные цифровые продукты для бизнеса: от идеи и проектирования до запуска и поддержки.</p>
-                <ul>
-                    <li>Погружаемся в задачи и отрасль</li>
-                    <li>Подбираем технологии под проект</li>
-                    <li>Сопровождаем продукт после запуска</li>
-                </ul>
+            <div class="hero-content">
+                <div class="hero-copy">
+                    <h1 id="hero-title">Development of <span>mobile applications</span> and <span>web services</span>
+                        of any complexity</h1>
+                    <p>We create mobile applications for iOS and Android that transfer your business to your customers'
+                        devices.</p>
+                </div>
+                <form class="hero-contact-form" action="#" method="post">
+                    <h2>Leave your contacts and we will call you back within 30 minutes</h2>
+                    <div class="hero-form-row">
+                        <label class="hero-form-field" for="hero-phone">
+                            <span>Phone number</span>
+                            <input id="hero-phone" name="phone" type="tel" autocomplete="tel"
+                                placeholder="+7 (702) 517-11-98" required>
+                        </label>
+                        <label class="hero-form-field" for="hero-name">
+                            <span>Full name</span>
+                            <input id="hero-name" name="name" type="text" autocomplete="name" placeholder="Your name"
+                                required>
+                        </label>
+                        <button type="submit">Get<br>consultation</button>
+                    </div>
+                </form>
             </div>
-            <form class="hero-contact-form" action="#" method="post">
-                <h2>Оставьте контакты — мы свяжемся с вами</h2>
-                <p>Ответим на вопросы и обсудим ваш проект в удобное время.</p>
-                <label for="hero-name">Ваше имя</label>
-                <input id="hero-name" name="name" type="text" autocomplete="name" required>
-                <label for="hero-phone">Телефон или email</label>
-                <input id="hero-phone" name="contact" type="text" autocomplete="email" required>
-                <button type="submit">Обсудить проект</button>
-            </form>
-            <figure class="hero-illustration">
-                <img src="https://placehold.co/600x440?text=Mobile+app" alt="Примеры экранов мобильного приложения"
-                    width="600" height="440">
-                <figcaption>Цифровые продукты, которыми удобно пользоваться</figcaption>
-            </figure>
+            <div class="hero-visual">
+                <img class="hero-collage" src="/src/assets/img/Group%201.png"
+                    alt="Наклонённые экраны мобильного приложения THOUSAND">
+            </div>
         </section>
 
         <hr>
@@ -280,30 +286,58 @@
         </section>
     </main>
 
-    <hr>
-
     <footer class="site-footer">
         <h2>IT WEBSITE</h2>
-        <p>Разрабатываем цифровые продукты для бизнеса.</p>
-        <address>
-            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
-            <a href="mailto:hello@itwebsite.example">hello@itwebsite.example</a>
-        </address>
-        <nav class="footer-navigation" aria-label="Навигация в подвале">
-            <ul>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#projects">Проекты</a></li>
-                <li><a href="#team">Команда</a></li>
-                <li><a href="#faq">Вопросы и ответы</a></li>
-            </ul>
-        </nav>
-        <form class="footer-contact-form" action="#" method="post">
-            <h3>Оставить заявку</h3>
-            <label for="footer-email">Электронная почта</label>
-            <input id="footer-email" name="email" type="email" required>
-            <button type="submit">Связаться со мной</button>
-        </form>
-        <p><small>&copy; IT WEBSITE. Все права защищены.</small></p>
+        <div class="footer-grid">
+            <div class="footer-item">
+                <p class="footer-label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="6" y="2.5" width="12" height="19" rx="2.5" />
+                        <path d="M10 18h4" />
+                    </svg>
+                    Contact nums
+                </p>
+                <a class="footer-value" href="tel:+77783959026">+7 (778) 395 90 26</a>
+            </div>
+            <div class="footer-item">
+                <p class="footer-label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+                        <path d="m3.5 6 8.5 7 8.5-7" />
+                    </svg>
+                    Post
+                </p>
+                <a class="footer-value" href="mailto:mail@mail.com">mail@mail.com</a>
+            </div>
+            <div class="footer-item">
+                <p class="footer-label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z" />
+                        <circle cx="12" cy="10" r="2.5" />
+                    </svg>
+                    Adress
+                </p>
+                <p class="footer-value">City city, street st. 90</p>
+            </div>
+            <div class="footer-item">
+                <p class="footer-label">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <path
+                            d="M7 2.5h7l6.5 6.5v11A1.5 1.5 0 0 1 19 21.5H7A3.5 3.5 0 0 1 3.5 18V6A3.5 3.5 0 0 1 7 2.5Z" />
+                        <path d="M14 3v6h6" />
+                    </svg>
+                    Leave a request
+                </p>
+                <a class="footer-value" href="#contacts">Leave a request</a>
+            </div>
+        </div>
+        <p class="footer-worldwide">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="9.5" />
+                <path d="M2.8 9h18.4M2.8 15h18.4M12 2.5a15 15 0 0 1 0 19M12 2.5a15 15 0 0 0 0 19" />
+            </svg>
+            We work throughout world
+        </p>
     </footer>
 
     <script src="index.js"></script>
