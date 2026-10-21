@@ -1,18 +1,312 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>IT WEBSITE — разработка цифровых продуктов</title>
     <link rel="stylesheet" href="/src/assets/styles/style.css">
 </head>
-<body>
-<div class="test" style="color: blue">
-    test
-</div>
 
-<script src="index.js"></script>
+<body>
+    <header class="site-header">
+        <a class="site-logo" href="/" aria-label="IT Website — главная">IT WEBSITE</a>
+        <nav class="main-navigation" aria-label="Основная навигация">
+            <ul>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Кейсы</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <p class="header-contact">Обсудим ваш проект?</p>
+        <a class="header-phone" href="tel:+74951234567">+7 (495) 123-45-67</a>
+    </header>
+
+    <hr>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <h1 id="hero-title">Разработка мобильных приложений и веб-сервисов любой сложности</h1>
+                <p>Создаём удобные цифровые продукты для бизнеса: от идеи и проектирования до запуска и поддержки.</p>
+                <ul>
+                    <li>Погружаемся в задачи и отрасль</li>
+                    <li>Подбираем технологии под проект</li>
+                    <li>Сопровождаем продукт после запуска</li>
+                </ul>
+            </div>
+            <form class="hero-contact-form" action="#" method="post">
+                <h2>Оставьте контакты — мы свяжемся с вами</h2>
+                <p>Ответим на вопросы и обсудим ваш проект в удобное время.</p>
+                <label for="hero-name">Ваше имя</label>
+                <input id="hero-name" name="name" type="text" autocomplete="name" required>
+                <label for="hero-phone">Телефон или email</label>
+                <input id="hero-phone" name="contact" type="text" autocomplete="email" required>
+                <button type="submit">Обсудить проект</button>
+            </form>
+            <figure class="hero-illustration">
+                <img src="https://placehold.co/600x440?text=Mobile+app" alt="Примеры экранов мобильного приложения"
+                    width="600" height="440">
+                <figcaption>Цифровые продукты, которыми удобно пользоваться</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section class="services-section" id="services" aria-labelledby="services-title">
+            <article class="development-cycle">
+                <h2 id="services-title">Полный цикл разработки</h2>
+                <p>Берём на себя весь путь от проверки идеи до развития готового продукта.</p>
+                <ul>
+                    <li>Исследование и аналитика</li>
+                    <li>Проектирование и дизайн</li>
+                    <li>Разработка и тестирование</li>
+                    <li>Запуск и техническая поддержка</li>
+                </ul>
+                <img src="https://placehold.co/520x240?text=Development+cycle" alt="Этапы полного цикла разработки"
+                    width="520" height="240">
+            </article>
+            <aside class="service-categories" aria-labelledby="categories-title">
+                <h2 id="categories-title">Наши направления</h2>
+                <p>Собираем команду под потребности вашего бизнеса.</p>
+                <ul>
+                    <li><a href="#stages">iOS-разработка</a></li>
+                    <li><a href="#stages">Android-разработка</a></li>
+                    <li><a href="#stages">Веб-разработка</a></li>
+                    <li><a href="#stages">UX/UI-дизайн</a></li>
+                    <li><a href="#stages">Тестирование и поддержка</a></li>
+                </ul>
+                <form action="#contacts" method="get">
+                    <label for="service-search">Какую услугу ищете?</label>
+                    <input id="service-search" name="service" type="search">
+                    <button type="submit">Найти услугу</button>
+                </form>
+            </aside>
+        </section>
+
+        <hr>
+
+        <section class="industries-section" aria-labelledby="industries-title">
+            <h2 id="industries-title">Более 100 проектов в 15 отраслях</h2>
+            <p>Помогаем компаниям создавать продукты для разных рынков и аудиторий.</p>
+            <ul class="industry-list">
+                <li>Социальные сети</li>
+                <li>Финансы и банки</li>
+                <li>Ритейл</li>
+                <li>Образование</li>
+                <li>Гейминг</li>
+                <li>Автотранспорт</li>
+                <li>Медицина и здоровье</li>
+                <li>Недвижимость</li>
+                <li>Маркетплейсы</li>
+                <li>Туризм</li>
+                <li>Телеком</li>
+                <li>Стартапы</li>
+            </ul>
+            <img src="https://placehold.co/900x240?text=Industries" alt="Иллюстрация проектов в разных отраслях"
+                width="900" height="240">
+        </section>
+
+        <hr>
+
+        <section class="projects-section" id="projects" aria-labelledby="projects-title">
+            <h2 id="projects-title">Проекты, которыми мы гордимся</h2>
+            <p>Показываем решения, которые помогают клиентам достигать своих целей.</p>
+            <nav class="project-navigation" aria-label="Категории проектов">
+                <ul>
+                    <li><a href="#featured-project">Все проекты</a></li>
+                    <li><a href="#featured-project">Доставка</a></li>
+                    <li><a href="#featured-project">Финансы</a></li>
+                    <li><a href="#featured-project">Медицина</a></li>
+                    <li><a href="#featured-project">E-commerce</a></li>
+                </ul>
+            </nav>
+            <article class="featured-project" id="featured-project">
+                <div class="project-description">
+                    <h3>I-teka</h3>
+                    <p>Сервис для поиска лекарств и аптек: помогаем пользователям быстро находить нужные товары.</p>
+                    <ul>
+                        <li>400% рост аудитории</li>
+                        <li>Более 200 000 пользователей</li>
+                    </ul>
+                    <p>Разработали мобильное приложение и веб-сервис для удобного поиска и заказа.</p>
+                    <a href="#contacts">Обсудить похожий проект</a>
+                </div>
+                <figure>
+                    <img src="https://placehold.co/600x400?text=I-teka+app" alt="Макет мобильного приложения I-teka"
+                        width="600" height="400">
+                    <figcaption>Мобильное приложение для поиска лекарств</figcaption>
+                </figure>
+            </article>
+        </section>
+
+        <hr>
+
+        <section class="project-cta" id="contacts" aria-labelledby="project-cta-title">
+            <div>
+                <h2 id="project-cta-title">Давайте обсудим ваш проект</h2>
+                <p>Расскажите о задаче — предложим подходящий план и оценим сроки.</p>
+            </div>
+            <form class="project-contact-form" action="#" method="post">
+                <h3>Как с вами связаться?</h3>
+                <label for="project-contact">Телефон или email</label>
+                <input id="project-contact" name="contact" type="text" required>
+                <label for="project-details">Коротко о проекте</label>
+                <textarea id="project-details" name="details" rows="3"></textarea>
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+
+        <hr>
+
+        <section class="stages-section" id="stages" aria-labelledby="stages-title">
+            <h2 id="stages-title">Этапы разработки приложения</h2>
+            <p>Понятный процесс помогает контролировать сроки и качество на каждом этапе.</p>
+            <div class="stage-list">
+                <article class="stage-card">
+                    <h3>Аналитика</h3>
+                    <p>Изучаем аудиторию, рынок и бизнес-цели будущего продукта.</p>
+                    <img src="https://placehold.co/320x180?text=Analysis" alt="Работа над аналитикой проекта"
+                        width="320" height="180">
+                </article>
+                <article class="stage-card">
+                    <h3>Тестирование</h3>
+                    <p>Проверяем работу продукта и исправляем ошибки до релиза.</p>
+                    <img src="https://placehold.co/320x180?text=Testing" alt="Тестирование цифрового продукта"
+                        width="320" height="180">
+                </article>
+                <article class="stage-card">
+                    <h3>Дизайн</h3>
+                    <p>Создаём понятные пользовательские сценарии и интерфейсы.</p>
+                    <img src="https://placehold.co/320x180?text=Design" alt="Проектирование интерфейса" width="320"
+                        height="180">
+                </article>
+                <article class="stage-card">
+                    <h3>Запуск</h3>
+                    <p>Публикуем приложение и помогаем команде подготовиться к запуску.</p>
+                    <img src="https://placehold.co/320x180?text=Launch" alt="Запуск приложения" width="320"
+                        height="180">
+                </article>
+                <article class="stage-card">
+                    <h3>Разработка</h3>
+                    <p>Создаём продукт, регулярно показываем результат и собираем обратную связь.</p>
+                    <img src="https://placehold.co/320x180?text=Development" alt="Разработка приложения" width="320"
+                        height="180">
+                </article>
+                <article class="stage-card">
+                    <h3>Поддержка</h3>
+                    <p>Развиваем продукт после релиза и обеспечиваем его стабильную работу.</p>
+                    <img src="https://placehold.co/320x180?text=Support" alt="Поддержка приложения после запуска"
+                        width="320" height="180">
+                </article>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="team-section" id="team" aria-labelledby="team-title">
+            <div class="team-description">
+                <h2 id="team-title">Наша команда</h2>
+                <p>Над вашим продуктом будет работать команда специалистов с опытом в цифровой разработке.</p>
+                <ul>
+                    <li>28 специалистов</li>
+                    <li>Более 100 запущенных проектов</li>
+                    <li>7 лет опыта</li>
+                </ul>
+                <p>Мы объединяем экспертизу в аналитике, дизайне, разработке и тестировании.</p>
+            </div>
+            <figure>
+                <img src="https://placehold.co/640x360?text=Our+team" alt="Команда специалистов IT WEBSITE" width="640"
+                    height="360">
+                <figcaption>Команда IT WEBSITE</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section class="ebook-section" aria-labelledby="ebook-title">
+            <div class="ebook-copy">
+                <h2 id="ebook-title">Получите книгу бесплатно</h2>
+                <p>Оставьте контакты, и мы отправим вам полезное руководство по разработке цифрового продукта.</p>
+                <form class="ebook-form" action="#" method="post">
+                    <label for="ebook-name">Ваше имя</label>
+                    <input id="ebook-name" name="name" type="text" autocomplete="name" required>
+                    <label for="ebook-email">Электронная почта</label>
+                    <input id="ebook-email" name="email" type="email" autocomplete="email" required>
+                    <button type="submit">Получить книгу</button>
+                </form>
+            </div>
+            <figure>
+                <img src="https://placehold.co/360x480?text=Free+book"
+                    alt="Обложка бесплатной книги о разработке приложений" width="360" height="480">
+                <figcaption>Практическое руководство по разработке приложений</figcaption>
+            </figure>
+        </section>
+
+        <hr>
+
+        <section class="faq-section" id="faq" aria-labelledby="faq-title">
+            <h2 id="faq-title">Часто задаваемые вопросы</h2>
+            <p>Ответы на вопросы о разработке и сотрудничестве.</p>
+            <div class="faq-list">
+                <article class="faq-item">
+                    <h3>Что такое разработка мобильного приложения?</h3>
+                    <p>Это полный процесс создания приложения: от исследования и проектирования до публикации и
+                        поддержки.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Как долго длится разработка?</h3>
+                    <p>Срок зависит от состава функций, платформ и сложности проекта. Оценим его после обсуждения
+                        задачи.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Вы даёте гарантию на мобильное приложение?</h3>
+                    <p>Условия гарантии и поддержки фиксируем в договоре и согласуем до начала работ.</p>
+                </article>
+                <article class="faq-item">
+                    <h3>Можно ли получить консультацию?</h3>
+                    <p>Да, оставьте заявку, и мы поможем разобраться с подходом, сроками и этапами разработки.</p>
+                </article>
+            </div>
+            <form class="faq-search" action="#" method="get">
+                <label for="faq-question">Не нашли ответ на свой вопрос?</label>
+                <input id="faq-question" name="question" type="search">
+                <button type="submit">Задать вопрос</button>
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <footer class="site-footer">
+        <h2>IT WEBSITE</h2>
+        <p>Разрабатываем цифровые продукты для бизнеса.</p>
+        <address>
+            <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+            <a href="mailto:hello@itwebsite.example">hello@itwebsite.example</a>
+        </address>
+        <nav class="footer-navigation" aria-label="Навигация в подвале">
+            <ul>
+                <li><a href="#services">Услуги</a></li>
+                <li><a href="#projects">Проекты</a></li>
+                <li><a href="#team">Команда</a></li>
+                <li><a href="#faq">Вопросы и ответы</a></li>
+            </ul>
+        </nav>
+        <form class="footer-contact-form" action="#" method="post">
+            <h3>Оставить заявку</h3>
+            <label for="footer-email">Электронная почта</label>
+            <input id="footer-email" name="email" type="email" required>
+            <button type="submit">Связаться со мной</button>
+        </form>
+        <p><small>&copy; IT WEBSITE. Все права защищены.</small></p>
+    </footer>
+
+    <script src="index.js"></script>
 </body>
+
 </html>
